@@ -48,9 +48,10 @@
 				<li class="active"><a href="#lA" data-toggle="tab">Bootstrap
 						Form</a></li>
 				<li><a href="#lB" data-toggle="tab">Bootstrap Menu</a></li>
-				<li><a href="#lC" data-toggle="tab">Bootstrap Popup</a></li>
+				<li><a href="#lC" data-toggle="tab">Bootstrap Modal</a></li>
 				<li><a href="#lD" data-toggle="tab">Bootstrap Images</a></li>
-				<li><a href="#lE" data-toggle="tab">Bootstrap Glyphicons</a></li>
+				<li><a href="#lE" data-toggle="tab">Bootstrap Table</a></li>
+				<li><a href="#lF" data-toggle="tab">Bootstrap Progressbar</a></li>
 			</ul>
 			<div class="tab-content">
 				<div class="tab-pane active" id="lA">
@@ -285,14 +286,14 @@
 								</ul>
 							</div>
 							<div class="tab-pane" id="M4" style="height: 200px;">
-							  <div class="well" style="max-width: 340px; padding: 8px 0;">
-								<ul class="nav nav-list">
-								    <li class="nav-header">List header</li>
-									<li class="active"><a href="#">List Menu1</a></li>
-									<li><a href="#">List Menu2</a></li>
-									<li class="disabled"><a href="#">List Menu3</a></li>
-								</ul>
-							</div>	
+								<div class="well" style="max-width: 340px; padding: 8px 0;">
+									<ul class="nav nav-list">
+										<li class="nav-header">List header</li>
+										<li class="active"><a href="#">List Menu1</a></li>
+										<li><a href="#">List Menu2</a></li>
+										<li class="disabled"><a href="#">List Menu3</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
 						<ul class="nav nav-tabs">
@@ -305,7 +306,106 @@
 					</div>
 				</div>
 				<div class="tab-pane" id="lC">
-					<p>What up girl, this is Section C.</p>
+					<p>
+						Modal &nbsp; <a href="" class="btn" data-toggle="popover"
+							data-placement="right"
+							data-content="Modal prompts are flexible and streamlined in Bootstrap"
+							title="What is this?">?</a>
+					</p>
+					<br />
+					<div class="well well-small">
+						This is a modal prompt that has modal heading, body content and
+						footer. Modal has fade effect when launching.<br /> <br /> <a
+							href="#myModal" role="button" class="btn btn-primary"
+							data-toggle="modal">Launch Bootstrap Modal</a>
+					</div>
+					<br />
+					<div class="well well-small">
+						This is an advanced modal prompt that has modal heading, body
+						content and footer. Modal has fade effect when launching. The body
+						content is set to overflow so that content will be in scrollpane.<br />
+						<br /> <a data-toggle="modal" href="#myModal1"
+							class="btn btn-primary">Launch Bootstrap Modal</a>
+					</div>
+					<div id="myModal" class="modal hide fade" tabindex="-1"
+						role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"
+								aria-hidden="true">×</button>
+							<h3 id="myModalLabel">Modal header</h3>
+						</div>
+						<div class="modal-body">
+							<p>Body content…</p>
+						</div>
+						<div class="modal-footer">
+							<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+							<button class="btn btn-primary">Submit</button>
+						</div>
+					</div>
+					<div id="myModal1" class="modal hide fade" tabindex="-1"
+						role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"
+								aria-hidden="true">&times;</button>
+							<h3 id="myModalLabel">Modal Header</h3>
+						</div>
+						<div class="modal-body">
+							<h4>Text in a modal</h4>
+							<p>Duis mollis, est non commodo luctus, nisi erat porttitor
+								ligula, eget lacinia odio sem.</p>
+
+							<h4>Popover in a modal</h4>
+							<p>
+								This <a href="#" role="button" class="btn popover-test"
+									title="A Title"
+									data-content="And here's some amazing content. It's very engaging. right?">button</a>
+								should trigger a popover on click.
+							</p>
+
+							<h4>Tooltips in a modal</h4>
+							<p>
+								<a href="#" class="tooltip-test" title="Tooltip">This link</a>
+								and <a href="#" class="tooltip-test" title="Tooltip">that
+									link</a> should have tooltips on hover.
+							</p>
+
+							<hr>
+
+							<h4>Overflowing text to show optional scrollbar</h4>
+							<p>
+								We set a fixed
+								<code>max-height</code>
+								on the
+								<code>.modal-body</code>
+								. Watch it overflow with all this extra lorem ipsum text we've
+								included.
+							</p>
+							<p>Cras mattis consectetur purus sit amet fermentum. Cras
+								justo odio, dapibus ac facilisis in, egestas eget quam. Morbi
+								leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+							<p>Praesent commodo cursus magna, vel scelerisque nisl
+								consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum
+								faucibus dolor auctor.</p>
+							<p>Aenean lacinia bibendum nulla sed consectetur. Praesent
+								commodo cursus magna, vel scelerisque nisl consectetur et. Donec
+								sed odio dui. Donec ullamcorper nulla non metus auctor
+								fringilla.</p>
+							<p>Cras mattis consectetur purus sit amet fermentum. Cras
+								justo odio, dapibus ac facilisis in, egestas eget quam. Morbi
+								leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+							<p>Praesent commodo cursus magna, vel scelerisque nisl
+								consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum
+								faucibus dolor auctor.</p>
+							<p>Aenean lacinia bibendum nulla sed consectetur. Praesent
+								commodo cursus magna, vel scelerisque nisl consectetur et. Donec
+								sed odio dui. Donec ullamcorper nulla non metus auctor
+								fringilla.</p>
+						</div>
+						<div class="modal-footer">
+							<button class="btn" data-dismiss="modal">Cancel</button>
+							<button class="btn btn-primary">Save</button>
+						</div>
+					</div>
 				</div>
 				<div class="tab-pane" id="lD">
 					<p>
@@ -379,7 +479,135 @@
 					</div>
 				</div>
 				<div class="tab-pane" id="lE">
-					<p>What up Glyphicons.</p>
+					<p>
+						Tables &nbsp; <a href="" class="btn" data-toggle="popover"
+							data-placement="right"
+							data-content="With Bootstrap,Tables have never been better"
+							title="What is this?">?</a>
+					</p>
+					<span class="badge badge-warning">1</span> Bordered Table with
+					Striped rows <br /> <br />
+					<table class="table table-striped table-bordered">
+						<thead>
+							<tr style="background-color: #d9edf7;">
+								<th>#</th>
+								<th>Table Name</th>
+								<th>Feature class</th>
+								<th>Username</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Stripped Table</td>
+								<td>table-striped</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Hovered Table</td>
+								<td>table-hover</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Special Table</td>
+								<td>row class</td>
+								<td>@bootstrap</td>
+							</tr>
+						</tbody>
+					</table>
+					<span class="badge badge-warning">2</span> Bordered Table with
+					Hover rows <br /> <br />
+					<table class="table table-hover table-bordered">
+						<thead>
+							<tr style="background-color: #d9edf7;">
+								<th>#</th>
+								<th>Table Name</th>
+								<th>Feature class</th>
+								<th>Username</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Stripped Table</td>
+								<td>table-striped</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Hovered Table</td>
+								<td>table-hover</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Special Table</td>
+								<td>row class</td>
+								<td>@bootstrap</td>
+							</tr>
+						</tbody>
+					</table>
+					<span class="badge badge-warning">3</span> Bordered Table with
+					Condensed rows and row classes <br /> <br />
+					<table class="table table-condensed table-bordered">
+						<thead>
+							<tr style="background-color: #d9edf7;">
+								<th>#</th>
+								<th>Table Name</th>
+								<th>Feature class</th>
+								<th>Username</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="warning">
+								<td>1</td>
+								<td>Stripped Table</td>
+								<td>table-striped</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Hovered Table</td>
+								<td>table-hover</td>
+								<td>@fat</td>
+							</tr>
+							<tr class="warning">
+								<td>3</td>
+								<td>Special Table</td>
+								<td>row class</td>
+								<td>@bootstrap</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="tab-pane" id="lF">
+					<p>
+						Progress Bars &nbsp; <a href="" class="btn" data-toggle="popover"
+							data-placement="right"
+							data-content="Entertain your users by Bootstrap Progress bars."
+							title="What is this?">?</a>
+					</p>
+					<br /> <span class="label">Default</span> Progress bar <br /> <br />
+					<div class="progress">
+						<div class="bar" style="width: 20%;"></div>
+					</div>
+					<br /> <span class="label label-warning">Striped</span> Progress
+					bar <br /> <br />
+					<div class="progress progress-striped progress-warning">
+						<div class="bar" style="width: 40%;"></div>
+					</div>
+					<br /> <span class="label label-success">Animated</span> Progress
+					bar <br /> <br />
+					<div class="progress progress-striped active progress-success">
+						<div class="bar" style="width: 60%;"></div>
+					</div>
+					<br /> <span class="label label-important">Danger</span> Progress
+					bar <br /> <br />
+					<div class="progress progress-danger">
+						<div class="bar" style="width: 80%"></div>
+					</div>
 				</div>
 			</div>
 		</div>
