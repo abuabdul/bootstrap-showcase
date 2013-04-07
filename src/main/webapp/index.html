@@ -23,7 +23,7 @@
 
 		<div class="masthead">
 			<ul class="nav nav-pills pull-right">
-				<li class="active"><a href="">Home</a></li>
+				<li class="active"><a href="index.html">Home</a></li>
 			</ul>
 			<h3 class="text-info">
 				<img src="img/bootstrap-logo.jpg"/> Bootstrap Showcase <i class="icon-share"></i>
@@ -43,6 +43,45 @@
 			<p>Why wait? Go adopt Bootstrap!</p>
 		</div>
 		<hr>
+		 <div class="row-fluid showcase">
+			<div class="span6">
+				<h4>
+					<span class="redHead">JavaScript Plugins</span>
+				</h4>
+				<p class="text-left">
+					Bootstrap provides many Javascript plugins. Plugins can be included
+					in your application individually or ... <a href="jsplugins.html"
+						title="JS Plugins">Read More</a>
+				</p>
+				
+				<h4>
+					<span class="redHead">Components</span>
+				</h4>
+				<p>Maecenas sed diam eget risus varius blandit sit amet non
+					magna.</p>
+			</div>
+			<div class="span6">
+				<h4>
+					<span class="redHead">Responsive Bootstrap</span>
+				</h4>
+				<p>
+					Bootstrap is very responsive and it knows how to respond to the
+					device in which Bootstrap application is viewed ... <a
+						href="responsive.html" title="Responsive">Read More</a>
+				</p>
+
+				<h4>
+					<span class="redHead">Glyphicons</span>
+				</h4>
+				<p>Maecenas sed diam eget risus varius blandit sit amet non
+					magna.</p>
+			</div>
+		</div>
+		<hr>
+		<h4>
+			<span class="redHead">Amazing Bootstrap!</span>
+		</h4>
+		<br/>
 		<div class="tabbable tabs-left">
 			<ul class="nav nav-tabs">
 				<li class="active"><a href="#lA" data-toggle="tab">Bootstrap
@@ -52,13 +91,15 @@
 				<li><a href="#lD" data-toggle="tab">Bootstrap Images</a></li>
 				<li><a href="#lE" data-toggle="tab">Bootstrap Table</a></li>
 				<li><a href="#lF" data-toggle="tab">Bootstrap Progressbar</a></li>
+				<li><a href="#lG" data-toggle="tab">Bootstrap Carousel</a></li>
+				<li><a href="#lH" data-toggle="tab">Bootstrap Typeahead</a></li>
 			</ul>
 			<div class="tab-content">
 				<div class="tab-pane active" id="lA">
 					<p>
 						Forms &nbsp; <a href="" class="btn" data-toggle="popover"
 							data-placement="right"
-							data-content="With Bootstrap, forms are made easy."
+							data-content="Forms are made easy with Bootstrap"
 							title="What is this?">?</a>
 					</p>
 					<div class="accordion" id="accordion2">
@@ -221,7 +262,7 @@
 					<p>
 						Menus &nbsp; <a href="" class="btn" data-toggle="popover"
 							data-placement="right"
-							data-content="With Bootstrap, Menus can be created in no time."
+							data-content="Unleashing Bootstrap, Menus can be created in no time"
 							title="What is this?">?</a>
 					</p>
 					<div class="tabbable tabs-below">
@@ -586,7 +627,7 @@
 					<p>
 						Progress Bars &nbsp; <a href="" class="btn" data-toggle="popover"
 							data-placement="right"
-							data-content="Entertain your users by Bootstrap Progress bars."
+							data-content="Entertain your users by Bootstrap Progress bars"
 							title="What is this?">?</a>
 					</p>
 					<br /> <span class="label">Default</span> Progress bar <br /> <br />
@@ -609,40 +650,76 @@
 						<div class="bar" style="width: 80%"></div>
 					</div>
 				</div>
+				<div class="tab-pane" id="lG">
+					<p>
+						Carousel &nbsp; <a href="" class="btn" data-toggle="popover"
+							data-placement="right"
+							data-content="You will never love any image slide show than Bootstrap carousel"
+							title="What is this?">?</a>
+					</p>
+					<br />
+					<div id="myCarousel" class="carousel slide">
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="img/browser-icon-chrome.png" alt="Chrome Browser Icon">
+								<div class="carousel-caption">
+									<h4>Chrome Thumbnail</h4>
+									<p>This is a chrome browser icon depicted in bootstrap carousel showcase.</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="img/browser-icon-firefox.png" alt="Firfox Browser Icon">
+								<div class="carousel-caption">
+									<h4>Firefox Thumbnail</h4>
+									<p>This is a firefox browser icon depicted in bootstrap carousel showcase.</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="img/browser-icon-safari.png" alt="Safari Browser Icon">
+								<div class="carousel-caption">
+									<h4>Safari Thumbnail</h4>
+									<p>This is a safari browser icon depicted in bootstrap carousel showcase.</p>
+								</div>
+							</div>
+						</div>
+						<a class="left carousel-control" href="#myCarousel"
+							data-slide="prev">&lsaquo;</a> <a class="right carousel-control"
+							href="#myCarousel" data-slide="next">&rsaquo;</a>
+					   </div>
+				</div>
+				<div class="tab-pane" id="lH">
+					<p>
+						Bootstrap Typeahead &nbsp; <a href="" class="btn" data-toggle="popover"
+							data-placement="right"
+							data-content="Auto suggest users to typeahead from Bootstrap"
+							title="What is this?">?</a>
+					</p>
+					<br />
+					<div class="well well-small">
+						<p class="redHead">Location Information</p><br /> 
+						Enter your city: <br /> <br /><input type="text" class="span3" style="margin: 0 auto;" data-provide="typeahead" data-items="4"
+						data-source='["Dallas","Birmingham","Chicago","New York","Los Angeles","San Diego","Minneapolis","Athens","Madison","Orange","San Mateo","Bristol","Waterbury","Winsted","Davenport","Destin","Edgewood","Gulfport","Hawthorne","Naperville","New Boston","Petersburg","Rochelle","Yorkville","Jamestown","Johnson City","Mapleton","Manhattan","Manchester","Roeland Park","St. Paul","St. Marys","St. John","St. George","Tampa","Topeka","Toronto","Westwood","Minneola","Monticello","Mulberry","Niceville","North Miami","Naples","Newberry","Oakland","Orlando","Vicksburg","Rochester","Shakopee","Fitchburg","Franklin"]'> 
+						<a href="#" class="tooltip-test" title="Suggests cities as you type"><img src="img/question_mark_left.gif"/></a>
+						<br /><br />
+						Enter your state: <br /> <br /> <input type="text" class="span3" style="margin: 0 auto;" data-provide="typeahead" data-items="4"
+						data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'> 
+						<a href="#" class="tooltip-test" title="Suggests states as you type"><img src="img/question_mark_left.gif"/></a> <br /> <br />
+						<div class="control-group">
+							<label class="control-label" for="inputSubmit"></label>
+							<div class="controls">
+								<input type="button" class="btn" value="Submit"/>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<hr>
-		<!-- <div class="row-fluid showcase">
-			<div class="span6">
-				<h4>Bootstrap JavaScript</h4>
-				<p>Donec id elit non mi porta gravida at eget metus. Maecenas
-					faucibus mollis interdum.</p>
-
-				<h4>Components</h4>
-				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-					Cras mattis consectetur purus sit amet fermentum.</p>
-
-				<h4>Glyphicons</h4>
-				<p>Maecenas sed diam eget risus varius blandit sit amet non
-					magna.</p>
-			</div>
-
-			<div class="span6">
-				<h4>Responsive</h4>
-				<p>Donec id elit non mi porta gravida at eget metus. Maecenas
-					faucibus mollis interdum.</p>
-
-				<h4>Subheading</h4>
-				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-					Cras mattis consectetur purus sit amet fermentum.</p>
-
-				<h4>Subheading</h4>
-				<p>Maecenas sed diam eget risus varius blandit sit amet non
-					magna.</p>
-			</div>
-		</div> -->
-		<hr>
-
 		<div class="footer">
 			<p>&copy; abubackersiddik.org 2013</p>
 		</div>

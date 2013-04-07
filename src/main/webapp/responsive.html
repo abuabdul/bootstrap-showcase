@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bootstrap &middot; Showcase - Responsive Design</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Le styles -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-showcase.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+	<div class="container-narrow">
+
+		<div class="masthead">
+			<ul class="nav nav-pills pull-right">
+				<li class="active"><a href="index.html">Home</a></li>
+			</ul>
+			<h3 class="text-info">
+				<img src="img/bootstrap-logo.jpg"/> Bootstrap Showcase <i class="icon-share"></i>
+			</h3>
+
+		</div>
+		<hr>
+		<div class="jumbotron">
+			<h1>Bootstrap - Powerful front-end framework for web
+				development!</h1>
+			<p>
+				Many new web technologies and frameworks are often emerging to
+				fulfill the need of sleek, faster and easier web development.</br>
+				Bootstrap is one among the best for innovative and hassle-free web
+				development. It helps web development a lot better.
+			</p>
+			<p>Why wait? Go adopt Bootstrap!</p>
+		</div>
+		<hr>
+		 <div class="row-fluid showcase">
+			<div class="span5">
+				<h4>
+					<span class="redHead">Responsive Bootstrap</span>
+				</h4>
+				<p class="text-left">Bootstrap has an amazing feature of
+					responsiveness to the devices. It knows how to respond to the
+					device in which Bootstrap application is viewed. Bootstrap
+					responsive design helps us to complement the same site to target
+					different devices like desktop, tablet, phone etc., instead of
+					creating different sites for each target device.</p>
+				<p>
+					For further details on Responsive Design, visit <a
+						href="http://twitter.github.io/bootstrap/scaffolding.html#responsive"
+						title="Bootstrap Responsive">Bootstrap Responsive Design</a>
+				</p>
+			</div>
+			<div class="span5">
+				<h4>
+					<span class="redHead">Responsive Demo</span>
+				</h4>
+				<div class="well well-small">
+					<p>Visible in phone only</p>
+					<div class="visible-phone">
+						<img src="img/responsive-illustrations.png" alt="Responsive Image" />
+					</div>
+					<br/>
+					<p>Visible in tablet only</p>
+					<div class="visible-tablet">
+						<img src="img/responsive-illustrations.png" alt="Responsive Image" />
+					</div>
+					<br/>
+				    <p>Visible in desktop only</p>
+					<div class="visible-desktop">
+						<img src="img/responsive-illustrations.png" alt="Responsive Image" />
+					</div>
+				</div>
+			</div>
+		  </div>
+		<hr>
+		<div class="footer">
+			<p>&copy; abubackersiddik.org 2013</p>
+		</div>
+
+	</div>
+	<!-- /container -->
+
+	<!-- Le javascript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-transition.js"></script>
+	<script src="js/bootstrap-alert.js"></script>
+	<script src="js/bootstrap-modal.js"></script>
+	<script src="js/bootstrap-dropdown.js"></script>
+	<script src="js/bootstrap-scrollspy.js"></script>
+	<script src="js/bootstrap-tab.js"></script>
+	<script src="js/bootstrap-tooltip.js"></script>
+	<script src="js/bootstrap-popover.js"></script>
+	<script src="js/bootstrap-button.js"></script>
+	<script src="js/bootstrap-collapse.js"></script>
+	<script src="js/bootstrap-carousel.js"></script>
+	<script src="js/bootstrap-typeahead.js"></script>
+	<script src="js/widgets.js"></script>
+	<script src="js/bootstrap-affix.js"></script>
+	<script src="js/holder.js"></script>
+	<script src="js/prettify.js"></script>
+	<script src="js/application.js"></script>
+	<script>
+		function showMessage() {
+			$('div.alert-info.simple-form').hide();
+			$('div.alert-success.simple-form').show();
+		}
+
+		$('[data-dismiss="alert"]').click(function() {
+			$('div.alert-info.simple-form').show();
+		})
+
+		function showNext() {
+			$('#images').hide();
+			$('#glyphicons').show();
+		}
+
+		function showPrevious() {
+			$('#images').show();
+			$('#glyphicons').hide();
+		}
+	</script>
+</body>
+</html>

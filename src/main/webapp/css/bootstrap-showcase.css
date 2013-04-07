@@ -44,7 +44,6 @@
 	font-size: 18px;
 	line-height: 1;
 	color: #d14;
-	/* color: #005580;  */
 	/* color: #b94a48;  */
 	/* color: #3a87ad;  */
 	/* color: #2d6987; */
@@ -81,4 +80,26 @@ div .popover-content {
 input[type="radio"],
 input[type="checkbox"]{
 	margin: 5px;
+}
+
+.carousel-indicators li {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.carousel-indicators .active {
+  background-color: #005580;
+}
+
+
+.redHead{
+	color: #d14;
+}
+
+.text-justify{
+	text-align: justify;
+}
+
+.sleek-style{
+	font-style:italic;
 }
