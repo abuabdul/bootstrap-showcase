@@ -103,3 +103,7 @@ input[type="checkbox"]{
 .sleek-style{
 	font-style:italic;
 }
+
+.blackBG{
+	background-color: #000;
+}
